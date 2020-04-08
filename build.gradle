@@ -9,25 +9,21 @@ plugins {
 
 repositories {
     mavenCentral()
-    mavenLocal()
-    maven {
-        url = uri('http://repo.maven.apache.org/maven2')
-    }
 }
 
 dependencies {
-    implementation 'org.springframework:spring-context:4.3.8.RELEASE'
-    implementation 'org.slf4j:slf4j-api:1.7.25'
-    testImplementation 'commons-io:commons-io:2.5'
-    testImplementation 'com.github.stefanbirkner:system-rules:1.16.0'
+    implementation 'org.springframework:spring-context:5.2.5.RELEASE'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    testImplementation 'commons-io:commons-io:2.6'
+    testImplementation 'com.github.stefanbirkner:system-rules:1.19.0'
     testImplementation 'junit:junit-dep:4.11'
-    compileOnly 'org.springframework.boot:spring-boot:1.5.3.RELEASE'
-    compileOnly 'org.springframework.boot:spring-boot-starter-tomcat:1.5.3.RELEASE'
+    compileOnly 'org.springframework.boot:spring-boot:2.2.6.RELEASE'
+    compileOnly 'org.springframework.boot:spring-boot-starter-tomcat:2.2.6.RELEASE'
 }
 
 group = 'io.pivotal.keystore'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = '1.7'
+sourceCompatibility = '1.8'
 
 publishing {
     publications {
